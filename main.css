@@ -44,14 +44,28 @@ header div i {
 
 /* NAVIGATION  --------------------------------------------- */
 
-nav {
-    background-color: #E38133;
-    box-shadow: 0 10px 0 #aaa;
+/* phone */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        list-style-type: none;
+    } 
 }
 
-nav ul {
-    list-style-type: none;
-    display: flex;
+/* desktop */
+@media only screen and (min-width: 601px) {
+    nav ul {
+        list-style-type: none;
+        display: flex;
+    }
+    
+    nav ul li a:hover {
+        background-color: #fff;
+        color: #E38133;
+    }
+}
+
+nav {
+    background-color: #E38133;
 }
 
 nav ul li a {
@@ -61,11 +75,6 @@ nav ul li a {
     display: block;
     padding: 10px 25px;
     transition: 0.2s;
-}
-
-nav ul li a:hover {
-    background-color: #fff;
-    color: #E38133;
 }
 
 nav .active {
@@ -131,13 +140,27 @@ main #destination-hero {
     background-position: -130px -5px;
 }
 
-/* layout */
-#icon-area {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 40px;
-    width: 90%;
-    margin: 50px auto;
+/* layout ---- */
+
+/* phone */
+@media only screen and (max-width: 600px) {
+    #icon-area {
+        display: grid;
+        grid-gap: 40px;
+        width: 90%;
+        margin: 50px auto;
+    }
+}
+
+/* desktop */
+@media only screen and (min-width: 601px) {
+    #icon-area {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 40px;
+        width: 90%;
+        margin: 50px auto;
+    }
 }
 
 #icon-area div {
@@ -146,18 +169,31 @@ main #destination-hero {
     align-items: center;
 }
 
-#icon-area p {
+#icon-area p, #icon-area h1 {
     text-align: center;
 }
 
 /* COMPANY HISTORY  --------------------------------------------- */
 
-main #company-history {
-    background-color: #ececec;
-    padding: 50 150px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 20px;
+/* phone */
+@media only screen and (max-width: 911px) {
+    main #company-history {
+        background-color: #ececec;
+        padding: 50px;
+        display: grid;
+        grid-gap: 20px;
+    }
+}
+
+/* desktop */
+@media only screen and (min-width: 910px) {
+    main #company-history {
+        background-color: #ececec;
+        padding: 50px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 20px;
+    }
 }
 
 main #company-history h1 {
@@ -171,14 +207,20 @@ main #company-history p {
     margin: 10px 0;
 }
 
+main #company-history div {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
 main #company-history img {
-    width: 100%;
+    width: 300px;
 }
 
 /* POPULAR DESTINATIONS --------------------------------------------- */
 
 main #popular-destinations {
-    /* padding: 50 150px; */
     padding: 50px;
 }
 
@@ -191,11 +233,13 @@ main #popular-destinations h1 {
 
 main #popular-destinations div {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 main #popular-destinations div figure {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin: 20px;
 }
 
 main #popular-destinations div figure figcaption {
@@ -212,7 +256,8 @@ main #popular-destinations div figure figcaption {
 
 main #testimonials {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 50px;
     background-color: #ececec;
 }
@@ -223,8 +268,9 @@ main #testimonials .quote-box {
     padding: 20px;
     color: #fff;
     box-shadow: 0px 1px 2px 2px #607425;
-    margin: 0 20px;
+    margin: 20px;
     font-weight: 600;
+    max-width: 500px;
 }
 
 main #testimonials .quotation-mark {
