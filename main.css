@@ -195,25 +195,9 @@ main #packages-hero {
 
 /* COMPANY HISTORY  --------------------------------------------- */
 
-/* phone */
-@media only screen and (max-width: 911px) {
-    main #company-history {
-        background-color: #ececec;
-        padding: 50px;
-        display: grid;
-        grid-gap: 20px;
-    }
-}
-
-/* desktop */
-@media only screen and (min-width: 910px) {
-    main #company-history {
-        background-color: #ececec;
-        padding: 50px;
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-gap: 20px;
-    }
+main #company-history {
+    background-color: #ececec;
+    padding: 50px;
 }
 
 main #company-history h1 {
@@ -225,6 +209,7 @@ main #company-history h1 {
 
 main #company-history p {
     margin: 10px 0;
+    text-align: center;
 }
 
 main #company-history div {
