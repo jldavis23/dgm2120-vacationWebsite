@@ -37,14 +37,11 @@ header h1 span {
 nav {
     background-color: #E38133;
     box-shadow: 0 10px 0 #aaa;
-    /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: center;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 nav ul li a {
@@ -69,7 +66,7 @@ main #hero-image-container {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left top;
-    height: 201px;
+    height: 250px;
 
     display: flex;
     justify-content: center;
@@ -84,3 +81,79 @@ main #hero-image-container h1 {
     padding: 10px;
     text-align: center;
 }
+
+/* ICON AREA  --------------------------------------------- */
+
+/* sprites */
+.sprite {
+    background-image: url(images/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+    margin: 10px;
+}
+
+.sprite-money {
+    width: 41px;
+    height: 74px;
+    background-position: -5px -5px;
+}
+
+.sprite-palm {
+    width: 64px;
+    height: 81px;
+    background-position: -56px -5px;
+}
+
+.sprite-sun {
+    width: 99px;
+    height: 79px;
+    background-position: -130px -5px;
+}
+
+/* layout */
+#icon-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    width: 90%;
+    margin: 50px auto;
+}
+
+#icon-area div {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#icon-area p {
+    text-align: center;
+}
+
+/* COMPANY HISTORY  --------------------------------------------- */
+
+main #company-history {
+    background-color: #ececec;
+    padding: 50 150px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+}
+
+main #company-history h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #E38133;
+    margin-bottom: 25px;
+}
+
+main #company-history p {
+    margin: 10px 0;
+}
+
+main #company-history img {
+    width: 100%;
+}
+
+/* POPULAR DESTINATIONS --------------------------------------------- */
+
+
