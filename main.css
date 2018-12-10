@@ -68,11 +68,15 @@ nav ul li a:hover {
     color: #E38133;
 }
 
+nav .active {
+    background-color: #fbd31c;
+    color: #fff;
+}
+
 
 /* HERO IMAGE  --------------------------------------------- */
 
-main #hero-image-container {
-    background-image: url(images/hero-image.jpg);
+main .hero-image-container {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left top;
@@ -81,15 +85,22 @@ main #hero-image-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
-main #hero-image-container h1 {
+main .hero-image-container h1 {
     color: #fff;
     font-size: 60px;
     opacity: 1;
     padding: 10px;
     text-align: center;
+}
+
+main #hero-homepage {
+    background-image: url(images/hero-image.jpg);
+}
+
+main #destination-hero {
+    background-image: url(images/destination-hero.jpg);
 }
 
 /* ICON AREA  --------------------------------------------- */
@@ -232,6 +243,35 @@ main #testimonials .quote-author {
 main #testimonials hr {
     border: 0.5px solid #fff;
 
+}
+
+/* DESTINATION GALLERY --------------------------------------------- */
+
+main #destination-gallery h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #E38133;
+    margin-bottom: 25px;
+}
+
+main #destination-gallery {
+    padding: 50px;
+}
+
+main #destination-gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main #destination-gallery-container figure {
+    margin: 20px;
+    border: 1px solid #aaa;
+    box-shadow: 0 2px 5px #aaa;
+}
+
+main #destination-gallery-container figure figcaption {
+    padding: 10px;
 }
 
 /* FOOTER --------------------------------------------- */
