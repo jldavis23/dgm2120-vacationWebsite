@@ -1,0 +1,46 @@
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-border-box: border-box;
+    -webkit-border-box: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* HEADER  --------------------------------------------- */
+
+header {
+    font-family: 'Raleway', sans-serif;
+    border-bottom: 2px solid black;
+    padding: 10px;
+    background-image: url(images/fun4lesslogo.png);
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin-left: 60px;
+}
+
+header h1 span {
+    color: #F06F35;
+}
+
+/* NAVIGATION  --------------------------------------------- */
+
+nav {
+    background-color: #E38133;
+}
+
+
+/* MAIN  --------------------------------------------- */
+
+img {
+    width: 100%;
+}
