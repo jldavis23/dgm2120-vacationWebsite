@@ -46,35 +46,51 @@ header div i {
 
 /* phone */
 @media only screen and (max-width: 600px) {
+    nav {
+        background-color: #ececec;
+        padding: 5px;
+    }
+
     nav ul {
         list-style-type: none;
     } 
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        background-color: #E38133;
+        font-weight: 600;
+        display: block;
+        padding: 10px 25px;
+        transition: 0.2s;
+        border-radius: 10px;
+        margin: 5px 0;
+    }
 }
 
 /* desktop */
 @media only screen and (min-width: 601px) {
+    nav {
+        background-color: #E38133;
+    }
+
     nav ul {
         list-style-type: none;
         display: flex;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 600;
+        display: block;
+        padding: 10px 25px;
+        transition: 0.2s;
     }
     
     nav ul li a:hover {
         background-color: #fff;
         color: #E38133;
     }
-}
-
-nav {
-    background-color: #E38133;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 600;
-    display: block;
-    padding: 10px 25px;
-    transition: 0.2s;
 }
 
 nav .active {
@@ -394,6 +410,81 @@ main #destination-gallery-container figure figcaption {
 
 #vacation-packages-container figure figcaption p {
     margin: 10px 0;
+}
+
+/* CONTACT US --------------------------------------------- */
+
+#contact-us-h1 {
+    text-align: left;
+}
+
+form {
+    margin: 30px 0;
+}
+
+form div {
+    display: flex;
+
+}
+
+form span {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.user-info {
+    width: 30vw;
+    height: 40px;
+    margin-right: 30px;
+    border: none;
+    background-color: #ececec;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.user-info:focus {
+    background-color: #d6d6d6;
+    outline: none;
+}
+
+form input[type="radio"] {
+    margin: 5px 3px 15px 0px;
+}
+
+form .contact-preference {
+    margin-right: 10px;
+}
+
+form #message {
+    width: 63vw;
+    height: 100px;
+}
+
+form input[type="submit"] {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    width: 20vw;
+    height: 40px;
+    border: none;
+    background-color: #89a435;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px 0;
+    transition: 0.2s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #607425;
+    cursor: pointer;
+}
+
+form p {
+    font-style: italic;
+    font-size: 14px;
 }
 
 
