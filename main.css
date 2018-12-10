@@ -112,6 +112,10 @@ main #destination-hero {
     background-image: url(images/destination-hero.jpg);
 }
 
+main #packages-hero {
+    background-image: url(images/packages-hero.jpg);
+}
+
 /* ICON AREA  --------------------------------------------- */
 
 /* sprites */
@@ -270,7 +274,7 @@ main #testimonials .quote-box {
     box-shadow: 0px 1px 2px 2px #607425;
     margin: 20px;
     font-weight: 600;
-    max-width: 500px;
+    max-width: 450px;
 }
 
 main #testimonials .quotation-mark {
@@ -291,18 +295,21 @@ main #testimonials hr {
 
 }
 
-/* DESTINATION GALLERY --------------------------------------------- */
-
-main #destination-gallery h1 {
+/* ----------- */
+/* shared with destination gallery and packages pages */
+main .page-wrapper .page-caption {
     text-align: center;
     font-size: 30px;
     color: #E38133;
     margin-bottom: 25px;
 }
 
-main #destination-gallery {
+main .page-wrapper {
     padding: 50px;
 }
+/* ----------- */
+
+/* DESTINATION GALLERY --------------------------------------------- */
 
 main #destination-gallery-container {
     display: flex;
@@ -319,6 +326,76 @@ main #destination-gallery-container figure {
 main #destination-gallery-container figure figcaption {
     padding: 10px;
 }
+
+/* VACATION PACKAGES --------------------------------------------- */
+#vacation-packages-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* phone */
+@media only screen and (max-width: 780px) {
+    #vacation-packages-container figure {
+        background-color: #ececec;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        padding: 10px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        border-top: 4px solid #fbd31c;
+        /* max-width: 600px; */
+        margin: 20px;
+    }
+}
+
+/* desktop */
+@media only screen and (min-width: 781px) {
+    #vacation-packages-container figure {
+        background-color: #ececec;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        border-top: 4px solid #fbd31c;
+        max-width: 840px;
+        margin: 20px;
+    }
+}
+
+#vacation-packages-container figure img {
+    /* height: 200px; */
+    width: 100%;
+}
+
+#vacation-packages-container figure figcaption {
+    margin-left: 15px;
+}
+
+#vacation-packages-container figure figcaption h1 {
+    color: #E38133;
+}
+
+#vacation-packages-container figure figcaption a {
+    text-decoration: none;
+}
+
+.hotel {
+    font-weight: 600;
+}
+
+.description {
+    font-size: 14px;
+}
+
+#vacation-packages-container figure figcaption h2 {
+    color: #89a435;
+}
+
+#vacation-packages-container figure figcaption p {
+    margin: 10px 0;
+}
+
 
 /* FOOTER --------------------------------------------- */
 
