@@ -32,6 +32,16 @@ header h1 span {
     color: #F06F35;
 }
 
+header div {
+    display: flex;
+    align-items: center;
+}
+
+header div i {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
 /* NAVIGATION  --------------------------------------------- */
 
 nav {
@@ -222,4 +232,13 @@ main #testimonials .quote-author {
 main #testimonials hr {
     border: 0.5px solid #fff;
 
+}
+
+/* FOOTER --------------------------------------------- */
+
+footer {
+    background-color: #E38133;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
 }
