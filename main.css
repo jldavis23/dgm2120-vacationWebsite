@@ -15,8 +15,8 @@ body {
 
 header {
     font-family: 'Raleway', sans-serif;
-    border-bottom: 2px solid black;
     padding: 10px;
+    background-color: #fff;
     background-image: url(images/fun4lesslogo.png);
     background-repeat: no-repeat;
     background-position-y: 50%;
@@ -36,11 +36,51 @@ header h1 span {
 
 nav {
     background-color: #E38133;
+    box-shadow: 0 10px 0 #aaa;
+    /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    display: block;
+    padding: 10px 25px;
+    transition: 0.2s;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #E38133;
 }
 
 
-/* MAIN  --------------------------------------------- */
+/* HERO IMAGE  --------------------------------------------- */
 
-img {
-    width: 100%;
+main #hero-image-container {
+    background-image: url(images/hero-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+    height: 201px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+main #hero-image-container h1 {
+    color: #fff;
+    font-size: 60px;
+    opacity: 1;
+    padding: 10px;
+    text-align: center;
 }
