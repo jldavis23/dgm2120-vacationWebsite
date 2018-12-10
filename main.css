@@ -186,3 +186,40 @@ main #popular-destinations div figure figcaption {
     text-shadow: 1px 1px 1px #000;
     font-size: 18px;
 }
+
+/* TESTIMONIALS --------------------------------------------- */
+
+main #testimonials {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #ececec;
+}
+
+main #testimonials .quote-box {
+    background-color: #89a435;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    box-shadow: 0px 1px 2px 2px #607425;
+    margin: 0 20px;
+    font-weight: 600;
+}
+
+main #testimonials .quotation-mark {
+    font-size: 80px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+main #testimonials .quote-text {
+    margin: -30px 0 20px 0;
+}
+
+main #testimonials .quote-author {
+    margin: 20px 0 0 0;
+}
+
+main #testimonials hr {
+    border: 0.5px solid #fff;
+
+}
